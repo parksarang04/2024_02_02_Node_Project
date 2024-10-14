@@ -1,0 +1,226 @@
+{"timestamp":"2024-07-23T07:58:17.415Z","level":"info","moduleName":"InstallerWinProcess","pid":2648,"message":"trying to connect to the ipc server"}
+{"timestamp":"2024-07-23T07:58:17.415Z","level":"debug","moduleName":"UnityIPCClient","pid":2648,"message":"connecting to IPC Server Unity-hubInstallServer"}
+{"timestamp":"2024-07-23T07:58:17.448Z","level":"debug","moduleName":"InstallerWinProcess","pid":2648,"message":"Validation strategy: {\"destination\":\"C:\\\\Program Files\\\\Unity\\\\Hub\\\\Editor\",\"destinationFilename\":\"UnitySetup64-2022.3.24f1.exe\",\"installerFilename\":\"UnitySetup64-2022.3.24f1.exe\",\"installerPath\":\"C:\\\\Users\\\\user\\\\AppData\\\\Local\\\\Temp\\\\unityhub-3550aa40-48c9-11ef-8195-07dcee3bd5c4\",\"installerSizeInBytes\":2866124800,\"type\":0,\"uid\":\"2022.3.24f1-x86_64\",\"editorUniqueId\":{\"version\":\"2022.3.24f1\",\"architecture\":\"x86_64\"}}"}
+{"timestamp":"2024-07-23T07:58:17.449Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Executing the Install Validation Strategy..."}
+{"timestamp":"2024-07-23T07:58:17.449Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Validating presence of an existing installation..."}
+{"timestamp":"2024-07-23T07:58:17.449Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Verifying installation type: EDITOR"}
+{"timestamp":"2024-07-23T07:58:17.449Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Verifying absence of an existing editor installation..."}
+{"timestamp":"2024-07-23T07:58:17.453Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Existing Editor Installation Check: Passed"}
+{"timestamp":"2024-07-23T07:58:17.453Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Validating destination path permission for access..."}
+{"timestamp":"2024-07-23T07:58:17.453Z","level":"debug","moduleName":"Disk Validation Strategy","pid":2648,"message":"Destination Path: C:\\Program Files\\Unity\\Hub\\Editor"}
+{"timestamp":"2024-07-23T07:58:17.455Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Destination Path check: Passed"}
+{"timestamp":"2024-07-23T07:58:17.455Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Validating available disk space on the partition."}
+{"timestamp":"2024-07-23T07:58:17.455Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Required space: 2866124800 bytes / 2.67 GB..."}
+{"timestamp":"2024-07-23T07:58:17.455Z","level":"debug","moduleName":"Disk Validation Strategy","pid":2648,"message":"Available disk Space: 437013815296 bytes"}
+{"timestamp":"2024-07-23T07:58:17.455Z","level":"debug","moduleName":"Disk Validation Strategy","pid":2648,"message":"Available Disk Check: Passed"}
+{"timestamp":"2024-07-23T07:58:17.455Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Validating accessibility of installer..."}
+{"timestamp":"2024-07-23T07:58:17.455Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Verifying read and write accessibility to installer source path: C:\\Users\\user\\AppData\\Local\\Temp\\unityhub-3550aa40-48c9-11ef-8195-07dcee3bd5c4\\UnitySetup64-2022.3.24f1.exe"}
+{"timestamp":"2024-07-23T07:58:17.456Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Installer Accessibility Check: Passed"}
+{"timestamp":"2024-07-23T07:58:17.456Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Validating file integrity (checksum).."}
+{"timestamp":"2024-07-23T07:58:17.456Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Checksum value not supplied. Skipping Checksum"}
+{"timestamp":"2024-07-23T07:58:17.456Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Checksum check: Passed"}
+{"timestamp":"2024-07-23T07:58:17.456Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Overall validation result: Passed"}
+{"timestamp":"2024-07-23T07:58:17.458Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":2648,"message":"beforeEditorInstallation"}
+{"timestamp":"2024-07-23T07:58:17.459Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":2648,"message":"execInstaller"}
+{"timestamp":"2024-07-23T07:58:17.459Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":2648,"message":"installFromExe"}
+{"timestamp":"2024-07-23T07:58:17.459Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":2648,"message":"install C:\\Users\\user\\AppData\\Local\\Temp\\unityhub-3550aa40-48c9-11ef-8195-07dcee3bd5c4\\UnitySetup64-2022.3.24f1.exe /S /D=C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1"}
+{"timestamp":"2024-07-23T08:07:30.800Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":2648,"message":"afterEditorInstallation"}
+{"timestamp":"2024-07-23T08:07:30.801Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":2648,"message":"Check DotNet Core Prerequisites, os release [ '10', '0', '22621' ]"}
+{"timestamp":"2024-07-23T08:07:30.801Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":2648,"message":"major 10 minor 0"}
+{"timestamp":"2024-07-23T08:07:30.801Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":2648,"message":"shouldInstallKB2999226:  false shouldInstallKB2533623:  false"}
+{"timestamp":"2024-07-23T08:07:30.803Z","level":"info","moduleName":"InstallerWinProcess","pid":2648,"message":"Creating modules.json at: C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\modules.json"}
+{"timestamp":"2024-07-23T08:07:33.711Z","level":"debug","moduleName":"InstallerWinProcess","pid":2648,"message":"Validation strategy: {\"destination\":\"C:\\\\Program Files\\\\Unity\\\\Hub\\\\Editor\",\"destinationFilename\":\"vs_Community.exe\",\"installerFilename\":\"vs_Community.exe\",\"installerPath\":\"C:\\\\Users\\\\user\\\\AppData\\\\Local\\\\Temp\\\\unityhub-3552a610-48c9-11ef-8195-07dcee3bd5c4\",\"installerSizeInBytes\":1699733504,\"type\":1,\"uid\":\"visualstudio\",\"editorUniqueId\":{\"version\":\"2022.3.24f1\",\"architecture\":\"x86_64\"}}"}
+{"timestamp":"2024-07-23T08:07:33.711Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Executing the Install Validation Strategy..."}
+{"timestamp":"2024-07-23T08:07:33.711Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Validating presence of an existing installation..."}
+{"timestamp":"2024-07-23T08:07:33.711Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Verifying installation type: EDITOR_MODULE"}
+{"timestamp":"2024-07-23T08:07:33.711Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Skipping module destination check for whitelisted item: visualstudio"}
+{"timestamp":"2024-07-23T08:07:33.711Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Skipping modules.json check for whitelisted item: visualstudio"}
+{"timestamp":"2024-07-23T08:07:33.711Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Validating destination path permission for access..."}
+{"timestamp":"2024-07-23T08:07:33.711Z","level":"debug","moduleName":"Disk Validation Strategy","pid":2648,"message":"Destination Path: C:\\Program Files\\Unity\\Hub\\Editor"}
+{"timestamp":"2024-07-23T08:07:33.712Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Destination Path check: Passed"}
+{"timestamp":"2024-07-23T08:07:33.712Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Validating available disk space on the partition."}
+{"timestamp":"2024-07-23T08:07:33.712Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Required space: 1699733504 bytes / 1.58 GB..."}
+{"timestamp":"2024-07-23T08:07:33.712Z","level":"debug","moduleName":"Disk Validation Strategy","pid":2648,"message":"Available disk Space: 431743590400 bytes"}
+{"timestamp":"2024-07-23T08:07:33.712Z","level":"debug","moduleName":"Disk Validation Strategy","pid":2648,"message":"Available Disk Check: Passed"}
+{"timestamp":"2024-07-23T08:07:33.712Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Validating accessibility of installer..."}
+{"timestamp":"2024-07-23T08:07:33.712Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Verifying read and write accessibility to installer source path: C:\\Users\\user\\AppData\\Local\\Temp\\unityhub-3552a610-48c9-11ef-8195-07dcee3bd5c4\\vs_Community.exe"}
+{"timestamp":"2024-07-23T08:07:33.712Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Installer Accessibility Check: Passed"}
+{"timestamp":"2024-07-23T08:07:33.713Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Validating file integrity (checksum).."}
+{"timestamp":"2024-07-23T08:07:33.713Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Checksum value not supplied. Skipping Checksum"}
+{"timestamp":"2024-07-23T08:07:33.713Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Checksum check: Passed"}
+{"timestamp":"2024-07-23T08:07:33.713Z","level":"info","moduleName":"Disk Validation Strategy","pid":2648,"message":"Overall validation result: Passed"}
+{"timestamp":"2024-07-23T08:07:33.714Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":2648,"message":"beforeModuleInstallation"}
+{"timestamp":"2024-07-23T08:07:33.714Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":2648,"message":"The module visualstudio does not have a destination"}
+{"timestamp":"2024-07-23T08:07:33.714Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":2648,"message":"execInstaller"}
+{"timestamp":"2024-07-23T08:07:33.714Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":2648,"message":"installFromExe"}
+{"timestamp":"2024-07-23T08:07:33.714Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":2648,"message":"install C:\\Users\\user\\AppData\\Local\\Temp\\unityhub-3552a610-48c9-11ef-8195-07dcee3bd5c4\\vs_Community.exe /S "}
+{"timestamp":"2024-07-23T08:08:20.910Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":2648,"message":"afterModuleInstallation"}
+{"timestamp":"2024-07-23T08:08:20.911Z","level":"info","moduleName":"InstallerWinProcess","pid":2648,"message":"Updating modules.json file at: C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\modules.json"}
+{"timestamp":"2024-07-30T03:28:03.445Z","level":"info","moduleName":"InstallerWinProcess","pid":17236,"message":"trying to connect to the ipc server"}
+{"timestamp":"2024-07-30T03:28:03.446Z","level":"debug","moduleName":"UnityIPCClient","pid":17236,"message":"connecting to IPC Server Unity-hubInstallServer"}
+{"timestamp":"2024-07-30T03:28:03.472Z","level":"debug","moduleName":"InstallerWinProcess","pid":17236,"message":"Validation strategy: {\"destination\":\"C:\\\\Program Files\\\\Unity\\\\Hub\\\\Editor\",\"destinationFilename\":\"UnitySetup64-2022.3.18f1.exe\",\"installerFilename\":\"UnitySetup64-2022.3.18f1.exe\",\"installerPath\":\"C:\\\\Users\\\\user\\\\AppData\\\\Local\\\\Temp\\\\unityhub-80ae6770-4e23-11ef-aeac-57b08df6b1eb\",\"installerSizeInBytes\":2625567744,\"type\":0,\"uid\":\"2022.3.18f1-x86_64\",\"editorUniqueId\":{\"version\":\"2022.3.18f1\",\"architecture\":\"x86_64\"}}"}
+{"timestamp":"2024-07-30T03:28:03.473Z","level":"info","moduleName":"Disk Validation Strategy","pid":17236,"message":"Executing the Install Validation Strategy..."}
+{"timestamp":"2024-07-30T03:28:03.473Z","level":"info","moduleName":"Disk Validation Strategy","pid":17236,"message":"Validating presence of an existing installation..."}
+{"timestamp":"2024-07-30T03:28:03.473Z","level":"info","moduleName":"Disk Validation Strategy","pid":17236,"message":"Verifying installation type: EDITOR"}
+{"timestamp":"2024-07-30T03:28:03.473Z","level":"info","moduleName":"Disk Validation Strategy","pid":17236,"message":"Verifying absence of an existing editor installation..."}
+{"timestamp":"2024-07-30T03:28:03.477Z","level":"info","moduleName":"Disk Validation Strategy","pid":17236,"message":"Existing Editor Installation Check: Passed"}
+{"timestamp":"2024-07-30T03:28:03.477Z","level":"info","moduleName":"Disk Validation Strategy","pid":17236,"message":"Validating destination path permission for access..."}
+{"timestamp":"2024-07-30T03:28:03.477Z","level":"debug","moduleName":"Disk Validation Strategy","pid":17236,"message":"Destination Path: C:\\Program Files\\Unity\\Hub\\Editor"}
+{"timestamp":"2024-07-30T03:28:03.478Z","level":"info","moduleName":"Disk Validation Strategy","pid":17236,"message":"Destination Path check: Passed"}
+{"timestamp":"2024-07-30T03:28:03.478Z","level":"info","moduleName":"Disk Validation Strategy","pid":17236,"message":"Validating available disk space on the partition."}
+{"timestamp":"2024-07-30T03:28:03.479Z","level":"info","moduleName":"Disk Validation Strategy","pid":17236,"message":"Required space: 2625567744 bytes / 2.45 GB..."}
+{"timestamp":"2024-07-30T03:28:03.479Z","level":"debug","moduleName":"Disk Validation Strategy","pid":17236,"message":"Available disk Space: 425044901888 bytes"}
+{"timestamp":"2024-07-30T03:28:03.479Z","level":"debug","moduleName":"Disk Validation Strategy","pid":17236,"message":"Available Disk Check: Passed"}
+{"timestamp":"2024-07-30T03:28:03.479Z","level":"info","moduleName":"Disk Validation Strategy","pid":17236,"message":"Validating accessibility of installer..."}
+{"timestamp":"2024-07-30T03:28:03.479Z","level":"info","moduleName":"Disk Validation Strategy","pid":17236,"message":"Verifying read and write accessibility to installer source path: C:\\Users\\user\\AppData\\Local\\Temp\\unityhub-80ae6770-4e23-11ef-aeac-57b08df6b1eb\\UnitySetup64-2022.3.18f1.exe"}
+{"timestamp":"2024-07-30T03:28:03.480Z","level":"info","moduleName":"Disk Validation Strategy","pid":17236,"message":"Installer Accessibility Check: Passed"}
+{"timestamp":"2024-07-30T03:28:03.480Z","level":"info","moduleName":"Disk Validation Strategy","pid":17236,"message":"Validating file integrity (checksum).."}
+{"timestamp":"2024-07-30T03:28:03.480Z","level":"info","moduleName":"Disk Validation Strategy","pid":17236,"message":"Checksum value not supplied. Skipping Checksum"}
+{"timestamp":"2024-07-30T03:28:03.480Z","level":"info","moduleName":"Disk Validation Strategy","pid":17236,"message":"Checksum check: Passed"}
+{"timestamp":"2024-07-30T03:28:03.480Z","level":"info","moduleName":"Disk Validation Strategy","pid":17236,"message":"Overall validation result: Passed"}
+{"timestamp":"2024-07-30T03:28:03.482Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":17236,"message":"beforeEditorInstallation"}
+{"timestamp":"2024-07-30T03:28:03.570Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":17236,"message":"execInstaller"}
+{"timestamp":"2024-07-30T03:28:03.570Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":17236,"message":"installFromExe"}
+{"timestamp":"2024-07-30T03:28:03.570Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":17236,"message":"install C:\\Users\\user\\AppData\\Local\\Temp\\unityhub-80ae6770-4e23-11ef-aeac-57b08df6b1eb\\UnitySetup64-2022.3.18f1.exe /S /D=C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.18f1"}
+{"timestamp":"2024-07-30T03:36:26.220Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":17236,"message":"afterEditorInstallation"}
+{"timestamp":"2024-07-30T03:36:26.221Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":17236,"message":"Check DotNet Core Prerequisites, os release [ '10', '0', '22631' ]"}
+{"timestamp":"2024-07-30T03:36:26.221Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":17236,"message":"major 10 minor 0"}
+{"timestamp":"2024-07-30T03:36:26.221Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":17236,"message":"shouldInstallKB2999226:  false shouldInstallKB2533623:  false"}
+{"timestamp":"2024-07-30T03:36:26.223Z","level":"info","moduleName":"InstallerWinProcess","pid":17236,"message":"Creating modules.json at: C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.18f1\\modules.json"}
+{"timestamp":"2024-09-25T02:14:21.538Z","level":"info","moduleName":"InstallerWinProcess","pid":16132,"message":"trying to connect to the ipc server"}
+{"timestamp":"2024-09-25T02:14:21.538Z","level":"debug","moduleName":"UnityIPCClient","pid":16132,"message":"connecting to IPC Server Unity-hubInstallServer"}
+{"timestamp":"2024-09-25T02:14:21.563Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":16132,"message":"uninstall 2022.3.24f1 at C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1"}
+{"timestamp":"2024-09-25T02:14:21.564Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":16132,"message":"exec uninstaller at C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Uninstall.exe"}
+{"timestamp":"2024-09-25T02:14:21.625Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":16132,"message":"remove Start Menu Shortcut of 2022.3.24f1 at C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Unity 2022.3.24f1"}
+{"timestamp":"2024-09-25T02:14:21.626Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":16132,"message":"remove Desktop shortcut of 2022.3.24f1 at %USERPROFILE%\\Desktop\\Unity 2022.3.24f1.lnk"}
+{"timestamp":"2024-09-25T02:14:21.627Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":16132,"message":"remove Start Menu Shortcut of 2022.3.24f1 at C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Unity 2022.3.24f1 (64-bit)"}
+{"timestamp":"2024-09-25T02:14:30.291Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":16132,"message":"Successfully removed the editor files at C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1"}
+{"timestamp":"2024-09-25T02:17:02.673Z","level":"debug","moduleName":"InstallerWinProcess","pid":16132,"message":"Validation strategy: {\"destination\":\"C:\\\\Program Files\\\\Unity\\\\Hub\\\\Editor\",\"destinationFilename\":\"UnitySetup64-2022.3.24f1.exe\",\"installerFilename\":\"UnitySetup64-2022.3.24f1.exe\",\"installerPath\":\"C:\\\\Users\\\\user\\\\AppData\\\\Local\\\\Temp\\\\unityhub-f8a59220-7ae3-11ef-bd33-89d98ec40c09\",\"installerSizeInBytes\":2866124800,\"type\":0,\"uid\":\"2022.3.24f1-x86_64\",\"editorUniqueId\":{\"version\":\"2022.3.24f1\",\"architecture\":\"x86_64\"}}"}
+{"timestamp":"2024-09-25T02:17:02.673Z","level":"info","moduleName":"Disk Validation Strategy","pid":16132,"message":"Executing the Install Validation Strategy..."}
+{"timestamp":"2024-09-25T02:17:02.673Z","level":"info","moduleName":"Disk Validation Strategy","pid":16132,"message":"Validating presence of an existing installation..."}
+{"timestamp":"2024-09-25T02:17:02.673Z","level":"info","moduleName":"Disk Validation Strategy","pid":16132,"message":"Verifying installation type: EDITOR"}
+{"timestamp":"2024-09-25T02:17:02.673Z","level":"info","moduleName":"Disk Validation Strategy","pid":16132,"message":"Verifying absence of an existing editor installation..."}
+{"timestamp":"2024-09-25T02:17:02.674Z","level":"info","moduleName":"Disk Validation Strategy","pid":16132,"message":"Existing Editor Installation Check: Passed"}
+{"timestamp":"2024-09-25T02:17:02.674Z","level":"info","moduleName":"Disk Validation Strategy","pid":16132,"message":"Validating destination path permission for access..."}
+{"timestamp":"2024-09-25T02:17:02.674Z","level":"debug","moduleName":"Disk Validation Strategy","pid":16132,"message":"Destination Path: C:\\Program Files\\Unity\\Hub\\Editor"}
+{"timestamp":"2024-09-25T02:17:02.675Z","level":"info","moduleName":"Disk Validation Strategy","pid":16132,"message":"Destination Path check: Passed"}
+{"timestamp":"2024-09-25T02:17:02.675Z","level":"info","moduleName":"Disk Validation Strategy","pid":16132,"message":"Validating available disk space on the partition."}
+{"timestamp":"2024-09-25T02:17:02.675Z","level":"info","moduleName":"Disk Validation Strategy","pid":16132,"message":"Required space: 2866124800 bytes / 2.67 GB..."}
+{"timestamp":"2024-09-25T02:17:02.676Z","level":"debug","moduleName":"Disk Validation Strategy","pid":16132,"message":"Available disk Space: 368292511744 bytes"}
+{"timestamp":"2024-09-25T02:17:02.676Z","level":"debug","moduleName":"Disk Validation Strategy","pid":16132,"message":"Available Disk Check: Passed"}
+{"timestamp":"2024-09-25T02:17:02.676Z","level":"info","moduleName":"Disk Validation Strategy","pid":16132,"message":"Validating accessibility of installer..."}
+{"timestamp":"2024-09-25T02:17:02.676Z","level":"info","moduleName":"Disk Validation Strategy","pid":16132,"message":"Verifying read and write accessibility to installer source path: C:\\Users\\user\\AppData\\Local\\Temp\\unityhub-f8a59220-7ae3-11ef-bd33-89d98ec40c09\\UnitySetup64-2022.3.24f1.exe"}
+{"timestamp":"2024-09-25T02:17:02.740Z","level":"info","moduleName":"Disk Validation Strategy","pid":16132,"message":"Installer Accessibility Check: Passed"}
+{"timestamp":"2024-09-25T02:17:02.741Z","level":"info","moduleName":"Disk Validation Strategy","pid":16132,"message":"Validating file integrity (checksum).."}
+{"timestamp":"2024-09-25T02:17:02.741Z","level":"info","moduleName":"Disk Validation Strategy","pid":16132,"message":"Checksum value not supplied. Skipping Checksum"}
+{"timestamp":"2024-09-25T02:17:02.741Z","level":"info","moduleName":"Disk Validation Strategy","pid":16132,"message":"Checksum check: Passed"}
+{"timestamp":"2024-09-25T02:17:02.741Z","level":"info","moduleName":"Disk Validation Strategy","pid":16132,"message":"Overall validation result: Passed"}
+{"timestamp":"2024-09-25T02:17:02.748Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":16132,"message":"beforeEditorInstallation"}
+{"timestamp":"2024-09-25T02:17:02.785Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":16132,"message":"execInstaller"}
+{"timestamp":"2024-09-25T02:17:02.785Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":16132,"message":"installFromExe"}
+{"timestamp":"2024-09-25T02:17:02.786Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":16132,"message":"install C:\\Users\\user\\AppData\\Local\\Temp\\unityhub-f8a59220-7ae3-11ef-bd33-89d98ec40c09\\UnitySetup64-2022.3.24f1.exe /S /D=C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1"}
+{"timestamp":"2024-09-25T02:25:54.086Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":16132,"message":"afterEditorInstallation"}
+{"timestamp":"2024-09-25T02:25:54.087Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":16132,"message":"Check DotNet Core Prerequisites, os release [ '10', '0', '22631' ]"}
+{"timestamp":"2024-09-25T02:25:54.087Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":16132,"message":"major 10 minor 0"}
+{"timestamp":"2024-09-25T02:25:54.087Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":16132,"message":"shouldInstallKB2999226:  false shouldInstallKB2533623:  false"}
+{"timestamp":"2024-09-25T02:25:54.089Z","level":"info","moduleName":"InstallerWinProcess","pid":16132,"message":"Creating modules.json at: C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\modules.json"}
+{"timestamp":"2024-09-25T03:25:58.212Z","level":"info","moduleName":"InstallerWinProcess","pid":16152,"message":"trying to connect to the ipc server"}
+{"timestamp":"2024-09-25T03:25:58.213Z","level":"debug","moduleName":"UnityIPCClient","pid":16152,"message":"connecting to IPC Server Unity-hubInstallServer"}
+{"timestamp":"2024-09-25T03:25:58.238Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":16152,"message":"uninstall 2022.3.24f1 at C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1"}
+{"timestamp":"2024-09-25T03:25:58.239Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":16152,"message":"exec uninstaller at C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\Editor\\Uninstall.exe"}
+{"timestamp":"2024-09-25T03:25:58.294Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":16152,"message":"remove Start Menu Shortcut of 2022.3.24f1 at C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Unity 2022.3.24f1"}
+{"timestamp":"2024-09-25T03:25:58.295Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":16152,"message":"remove Desktop shortcut of 2022.3.24f1 at %USERPROFILE%\\Desktop\\Unity 2022.3.24f1.lnk"}
+{"timestamp":"2024-09-25T03:25:58.296Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":16152,"message":"remove Start Menu Shortcut of 2022.3.24f1 at C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Unity 2022.3.24f1 (64-bit)"}
+{"timestamp":"2024-09-25T03:26:06.987Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":16152,"message":"Successfully removed the editor files at C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1"}
+{"timestamp":"2024-09-25T03:26:06.988Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":16152,"message":"uninstall 2022.3.18f1 at C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.18f1"}
+{"timestamp":"2024-09-25T03:26:06.988Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":16152,"message":"exec uninstaller at C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.18f1\\Editor\\Uninstall.exe"}
+{"timestamp":"2024-09-25T03:26:07.047Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":16152,"message":"remove Start Menu Shortcut of 2022.3.18f1 at C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Unity 2022.3.18f1"}
+{"timestamp":"2024-09-25T03:26:07.048Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":16152,"message":"remove Desktop shortcut of 2022.3.18f1 at %USERPROFILE%\\Desktop\\Unity 2022.3.18f1.lnk"}
+{"timestamp":"2024-09-25T03:26:07.049Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":16152,"message":"remove Start Menu Shortcut of 2022.3.18f1 at C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Unity 2022.3.18f1 (64-bit)"}
+{"timestamp":"2024-09-25T03:26:15.596Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":16152,"message":"Successfully removed the editor files at C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.18f1"}
+{"timestamp":"2024-09-25T04:14:48.207Z","level":"debug","moduleName":"InstallerWinProcess","pid":16152,"message":"Validation strategy: {\"destination\":\"C:\\\\Program Files\\\\Unity\\\\Hub\\\\Editor\",\"destinationFilename\":\"UnitySetup64-2022.3.24f1.exe\",\"installerFilename\":\"UnitySetup64-2022.3.24f1.exe\",\"installerPath\":\"C:\\\\Users\\\\user\\\\AppData\\\\Local\\\\Temp\\\\unityhub-693d2b00-7af4-11ef-aef5-c7e88e265e40\",\"installerSizeInBytes\":2866124800,\"type\":0,\"uid\":\"2022.3.24f1-x86_64\",\"editorUniqueId\":{\"version\":\"2022.3.24f1\",\"architecture\":\"x86_64\"}}"}
+{"timestamp":"2024-09-25T04:14:48.208Z","level":"info","moduleName":"Disk Validation Strategy","pid":16152,"message":"Executing the Install Validation Strategy..."}
+{"timestamp":"2024-09-25T04:14:48.208Z","level":"info","moduleName":"Disk Validation Strategy","pid":16152,"message":"Validating presence of an existing installation..."}
+{"timestamp":"2024-09-25T04:14:48.208Z","level":"info","moduleName":"Disk Validation Strategy","pid":16152,"message":"Verifying installation type: EDITOR"}
+{"timestamp":"2024-09-25T04:14:48.208Z","level":"info","moduleName":"Disk Validation Strategy","pid":16152,"message":"Verifying absence of an existing editor installation..."}
+{"timestamp":"2024-09-25T04:14:48.210Z","level":"info","moduleName":"Disk Validation Strategy","pid":16152,"message":"Existing Editor Installation Check: Passed"}
+{"timestamp":"2024-09-25T04:14:48.210Z","level":"info","moduleName":"Disk Validation Strategy","pid":16152,"message":"Validating destination path permission for access..."}
+{"timestamp":"2024-09-25T04:14:48.210Z","level":"debug","moduleName":"Disk Validation Strategy","pid":16152,"message":"Destination Path: C:\\Program Files\\Unity\\Hub\\Editor"}
+{"timestamp":"2024-09-25T04:14:48.212Z","level":"info","moduleName":"Disk Validation Strategy","pid":16152,"message":"Destination Path check: Passed"}
+{"timestamp":"2024-09-25T04:14:48.213Z","level":"info","moduleName":"Disk Validation Strategy","pid":16152,"message":"Validating available disk space on the partition."}
+{"timestamp":"2024-09-25T04:14:48.213Z","level":"info","moduleName":"Disk Validation Strategy","pid":16152,"message":"Required space: 2866124800 bytes / 2.67 GB..."}
+{"timestamp":"2024-09-25T04:14:48.213Z","level":"debug","moduleName":"Disk Validation Strategy","pid":16152,"message":"Available disk Space: 361999024128 bytes"}
+{"timestamp":"2024-09-25T04:14:48.213Z","level":"debug","moduleName":"Disk Validation Strategy","pid":16152,"message":"Available Disk Check: Passed"}
+{"timestamp":"2024-09-25T04:14:48.213Z","level":"info","moduleName":"Disk Validation Strategy","pid":16152,"message":"Validating accessibility of installer..."}
+{"timestamp":"2024-09-25T04:14:48.213Z","level":"info","moduleName":"Disk Validation Strategy","pid":16152,"message":"Verifying read and write accessibility to installer source path: C:\\Users\\user\\AppData\\Local\\Temp\\unityhub-693d2b00-7af4-11ef-aef5-c7e88e265e40\\UnitySetup64-2022.3.24f1.exe"}
+{"timestamp":"2024-09-25T04:14:48.298Z","level":"info","moduleName":"Disk Validation Strategy","pid":16152,"message":"Installer Accessibility Check: Passed"}
+{"timestamp":"2024-09-25T04:14:48.299Z","level":"info","moduleName":"Disk Validation Strategy","pid":16152,"message":"Validating file integrity (checksum).."}
+{"timestamp":"2024-09-25T04:14:48.299Z","level":"info","moduleName":"Disk Validation Strategy","pid":16152,"message":"Checksum value not supplied. Skipping Checksum"}
+{"timestamp":"2024-09-25T04:14:48.299Z","level":"info","moduleName":"Disk Validation Strategy","pid":16152,"message":"Checksum check: Passed"}
+{"timestamp":"2024-09-25T04:14:48.299Z","level":"info","moduleName":"Disk Validation Strategy","pid":16152,"message":"Overall validation result: Passed"}
+{"timestamp":"2024-09-25T04:14:48.307Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":16152,"message":"beforeEditorInstallation"}
+{"timestamp":"2024-09-25T04:14:48.308Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":16152,"message":"execInstaller"}
+{"timestamp":"2024-09-25T04:14:48.308Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":16152,"message":"installFromExe"}
+{"timestamp":"2024-09-25T04:14:48.308Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":16152,"message":"install C:\\Users\\user\\AppData\\Local\\Temp\\unityhub-693d2b00-7af4-11ef-aef5-c7e88e265e40\\UnitySetup64-2022.3.24f1.exe /S /D=C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1"}
+{"timestamp":"2024-09-25T04:22:12.026Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":16152,"message":"afterEditorInstallation"}
+{"timestamp":"2024-09-25T04:22:12.027Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":16152,"message":"Check DotNet Core Prerequisites, os release [ '10', '0', '22631' ]"}
+{"timestamp":"2024-09-25T04:22:12.027Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":16152,"message":"major 10 minor 0"}
+{"timestamp":"2024-09-25T04:22:12.027Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":16152,"message":"shouldInstallKB2999226:  false shouldInstallKB2533623:  false"}
+{"timestamp":"2024-09-25T04:22:12.030Z","level":"info","moduleName":"InstallerWinProcess","pid":16152,"message":"Creating modules.json at: C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.24f1\\modules.json"}
+{"timestamp":"2024-10-02T20:18:09.833Z","level":"info","moduleName":"InstallerWinProcess","pid":22332,"message":"trying to connect to the ipc server"}
+{"timestamp":"2024-10-02T20:18:09.833Z","level":"debug","moduleName":"UnityIPCClient","pid":22332,"message":"connecting to IPC Server Unity-hubInstallServer"}
+{"timestamp":"2024-10-02T20:18:09.862Z","level":"debug","moduleName":"InstallerWinProcess","pid":22332,"message":"Validation strategy: {\"destination\":\"C:\\\\Program Files\\\\Unity\\\\Hub\\\\Editor\",\"destinationFilename\":\"UnitySetup64-2021.3.21f1.exe\",\"installerFilename\":\"UnitySetup64-2021.3.21f1.exe\",\"installerPath\":\"C:\\\\Users\\\\user\\\\AppData\\\\Local\\\\Temp\\\\unityhub-3bcc2a70-80fa-11ef-8984-dde92c1854f7\",\"installerSizeInBytes\":2432025600,\"type\":0,\"uid\":\"2021.3.21f1-x86_64\",\"editorUniqueId\":{\"version\":\"2021.3.21f1\",\"architecture\":\"x86_64\"}}"}
+{"timestamp":"2024-10-02T20:18:09.862Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Executing the Install Validation Strategy..."}
+{"timestamp":"2024-10-02T20:18:09.862Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Validating presence of an existing installation..."}
+{"timestamp":"2024-10-02T20:18:09.862Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Verifying installation type: EDITOR"}
+{"timestamp":"2024-10-02T20:18:09.863Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Verifying absence of an existing editor installation..."}
+{"timestamp":"2024-10-02T20:18:09.866Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Existing Editor Installation Check: Passed"}
+{"timestamp":"2024-10-02T20:18:09.866Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Validating destination path permission for access..."}
+{"timestamp":"2024-10-02T20:18:09.866Z","level":"debug","moduleName":"Disk Validation Strategy","pid":22332,"message":"Destination Path: C:\\Program Files\\Unity\\Hub\\Editor"}
+{"timestamp":"2024-10-02T20:18:09.867Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Destination Path check: Passed"}
+{"timestamp":"2024-10-02T20:18:09.868Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Validating available disk space on the partition."}
+{"timestamp":"2024-10-02T20:18:09.868Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Required space: 2432025600 bytes / 2.27 GB..."}
+{"timestamp":"2024-10-02T20:18:09.868Z","level":"debug","moduleName":"Disk Validation Strategy","pid":22332,"message":"Available disk Space: 358307692544 bytes"}
+{"timestamp":"2024-10-02T20:18:09.868Z","level":"debug","moduleName":"Disk Validation Strategy","pid":22332,"message":"Available Disk Check: Passed"}
+{"timestamp":"2024-10-02T20:18:09.868Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Validating accessibility of installer..."}
+{"timestamp":"2024-10-02T20:18:09.868Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Verifying read and write accessibility to installer source path: C:\\Users\\user\\AppData\\Local\\Temp\\unityhub-3bcc2a70-80fa-11ef-8984-dde92c1854f7\\UnitySetup64-2021.3.21f1.exe"}
+{"timestamp":"2024-10-02T20:18:09.868Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Installer Accessibility Check: Passed"}
+{"timestamp":"2024-10-02T20:18:09.868Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Validating file integrity (checksum).."}
+{"timestamp":"2024-10-02T20:18:09.868Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Checksum value not supplied. Skipping Checksum"}
+{"timestamp":"2024-10-02T20:18:09.869Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Checksum check: Passed"}
+{"timestamp":"2024-10-02T20:18:09.869Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Overall validation result: Passed"}
+{"timestamp":"2024-10-02T20:18:09.871Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":22332,"message":"beforeEditorInstallation"}
+{"timestamp":"2024-10-02T20:18:09.872Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":22332,"message":"execInstaller"}
+{"timestamp":"2024-10-02T20:18:09.872Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":22332,"message":"installFromExe"}
+{"timestamp":"2024-10-02T20:18:09.872Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":22332,"message":"install C:\\Users\\user\\AppData\\Local\\Temp\\unityhub-3bcc2a70-80fa-11ef-8984-dde92c1854f7\\UnitySetup64-2021.3.21f1.exe /S /D=C:\\Program Files\\Unity\\Hub\\Editor\\2021.3.21f1"}
+{"timestamp":"2024-10-02T20:22:57.869Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":22332,"message":"afterEditorInstallation"}
+{"timestamp":"2024-10-02T20:22:57.871Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":22332,"message":"Check DotNet Core Prerequisites, os release [ '10', '0', '22631' ]"}
+{"timestamp":"2024-10-02T20:22:57.871Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":22332,"message":"major 10 minor 0"}
+{"timestamp":"2024-10-02T20:22:57.871Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":22332,"message":"shouldInstallKB2999226:  false shouldInstallKB2533623:  false"}
+{"timestamp":"2024-10-02T20:22:57.878Z","level":"info","moduleName":"InstallerWinProcess","pid":22332,"message":"Creating modules.json at: C:\\Program Files\\Unity\\Hub\\Editor\\2021.3.21f1\\modules.json"}
+{"timestamp":"2024-10-02T20:23:01.803Z","level":"debug","moduleName":"InstallerWinProcess","pid":22332,"message":"Validation strategy: {\"destination\":\"C:\\\\Program Files\\\\Unity\\\\Hub\\\\Editor\",\"destinationFilename\":\"vs_Community.exe\",\"installerFilename\":\"vs_Community.exe\",\"installerPath\":\"C:\\\\Users\\\\user\\\\AppData\\\\Local\\\\Temp\\\\unityhub-3bf9ca20-80fa-11ef-8984-dde92c1854f7\",\"installerSizeInBytes\":1363148800,\"type\":1,\"uid\":\"visualstudio\",\"editorUniqueId\":{\"version\":\"2021.3.21f1\",\"architecture\":\"x86_64\"}}"}
+{"timestamp":"2024-10-02T20:23:01.803Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Executing the Install Validation Strategy..."}
+{"timestamp":"2024-10-02T20:23:01.803Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Validating presence of an existing installation..."}
+{"timestamp":"2024-10-02T20:23:01.803Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Verifying installation type: EDITOR_MODULE"}
+{"timestamp":"2024-10-02T20:23:01.803Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Skipping module destination check for whitelisted item: visualstudio"}
+{"timestamp":"2024-10-02T20:23:01.804Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Skipping modules.json check for whitelisted item: visualstudio"}
+{"timestamp":"2024-10-02T20:23:01.804Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Validating destination path permission for access..."}
+{"timestamp":"2024-10-02T20:23:01.804Z","level":"debug","moduleName":"Disk Validation Strategy","pid":22332,"message":"Destination Path: C:\\Program Files\\Unity\\Hub\\Editor"}
+{"timestamp":"2024-10-02T20:23:01.807Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Destination Path check: Passed"}
+{"timestamp":"2024-10-02T20:23:01.808Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Validating available disk space on the partition."}
+{"timestamp":"2024-10-02T20:23:01.808Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Required space: 1363148800 bytes / 1.27 GB..."}
+{"timestamp":"2024-10-02T20:23:01.809Z","level":"debug","moduleName":"Disk Validation Strategy","pid":22332,"message":"Available disk Space: 354561163264 bytes"}
+{"timestamp":"2024-10-02T20:23:01.809Z","level":"debug","moduleName":"Disk Validation Strategy","pid":22332,"message":"Available Disk Check: Passed"}
+{"timestamp":"2024-10-02T20:23:01.809Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Validating accessibility of installer..."}
+{"timestamp":"2024-10-02T20:23:01.809Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Verifying read and write accessibility to installer source path: C:\\Users\\user\\AppData\\Local\\Temp\\unityhub-3bf9ca20-80fa-11ef-8984-dde92c1854f7\\vs_Community.exe"}
+{"timestamp":"2024-10-02T20:23:01.811Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Installer Accessibility Check: Passed"}
+{"timestamp":"2024-10-02T20:23:01.811Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Validating file integrity (checksum).."}
+{"timestamp":"2024-10-02T20:23:01.811Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Checksum value not supplied. Skipping Checksum"}
+{"timestamp":"2024-10-02T20:23:01.811Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Checksum check: Passed"}
+{"timestamp":"2024-10-02T20:23:01.811Z","level":"info","moduleName":"Disk Validation Strategy","pid":22332,"message":"Overall validation result: Passed"}
+{"timestamp":"2024-10-02T20:23:01.815Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":22332,"message":"beforeModuleInstallation"}
+{"timestamp":"2024-10-02T20:23:01.815Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":22332,"message":"The module visualstudio does not have a destination"}
+{"timestamp":"2024-10-02T20:23:01.815Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":22332,"message":"execInstaller"}
+{"timestamp":"2024-10-02T20:23:01.815Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":22332,"message":"installFromExe"}
+{"timestamp":"2024-10-02T20:23:01.815Z","level":"info","moduleName":"UnityInstallStepsWindows","pid":22332,"message":"install C:\\Users\\user\\AppData\\Local\\Temp\\unityhub-3bf9ca20-80fa-11ef-8984-dde92c1854f7\\vs_Community.exe /S "}
+{"timestamp":"2024-10-02T21:36:47.221Z","level":"debug","moduleName":"UnityInstallStepsWindows","pid":22332,"message":"afterModuleInstallation"}
