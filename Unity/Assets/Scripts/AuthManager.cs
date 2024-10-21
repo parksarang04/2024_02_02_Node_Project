@@ -48,7 +48,7 @@ public class AuthManager : MonoBehaviour
     }
 
     //사용자 등록 코루틴
-    public IE Register(string username, string password)
+    public IEnumerator Register(string username, string password)
     {
         var user = new { username, password };
         var jsonData = JsonConvert.SerializeObject(user);
