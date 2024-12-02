@@ -6,6 +6,7 @@ using NativeWebSocket;                                  //WebSocket 활용
 using TMPro;
 using Newtonsoft.Json;
 using UnityEngine.UI;
+using UnityEditor.VersionControl;
 
 //메세지 타입 정의
 [SerializeField]
@@ -49,16 +50,41 @@ public class NetworkManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI statusText;
     [SerializeField] private TextMeshProUGUI chatLog;
 
+
+
+    [Header("Player")]
+    [SerializeField] private GameObject playerPrafabs;                                          //inspector 에서 플레이어 프리팹 할당
+    private string myPlayerId;                                                                  //내 플레이어 ID 저장
+    private GameObject myPlayer;                                                                // 내 플레이어 객체
+    private Dictionary<string, GameObject> otherPlayers = new Dictionary<string, GameObject>(); //다른 플레이어들 관리
+
+    private float syncInterval = 0.1f;
+    private float syncTimer = 0f;
     // Start is called before the first frame update
     void Start()
     {
-
+        ConnectToServer();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+#if UNITY_WEBGL || UNITY_EDITOR
+        if(webSocket != null)
+        {
+            webSocket.DispatchMessageQueue();
+        }
+#endif
+        //위치 동기화 타이머
+        if(myPlayer != null)
+        {
+            syncTimer += Time.deltaTime;
+            if(syncTimer >= syncInterval)
+            {
+                SendPositionUpdate();
+                syncTimer= 0f;
+            }
+        }
     }
 
     private async void ConnectToServer()
@@ -100,9 +126,16 @@ public class NetworkManager : MonoBehaviour
             switch (message.type)
             {
                 case "connection":
+                    HandleConnection(message);
                     break;
                 case "chat":
                     AddToChatLog(message.message);
+                    break;
+                case "playerPosition":
+                    UpdatePlayerPosition(message);
+                    break;
+                case "playerDisconnect":
+                      RemovePlayer(message.playerId);
                     break;
             }
         }
@@ -151,4 +184,65 @@ public class NetworkManager : MonoBehaviour
             await webSocket.Close();
         }
     }
+
+    //연결 처리 메서드8
+    private void HandleConnection(NetworkMessage message)
+    {
+        myPlayerId = message.playerId;
+        AddToChatLog($"서버에 연결됨(ID : {myPlayer}");
+
+        //플레이어 생성
+        Vector3 spawnPosition = new Vector3(0, 1, 0);
+        myPlayer = Instantiate(playerPrafabs, spawnPosition, Quaternion.identity);
+        myPlayer.name = $"Player_{myPlayerId}";
+
+        //내 플레이어 설정
+        PlayerController controller = myPlayer.GetComponent<PlayerController>();
+        if(controller != null)
+        {
+            controller.SetAsMyPlayer();
+        }
+    }
+    //위치 전송 함수
+    private async void SendPositionUpdate()
+    {
+        if(webSocket.State == WebSocketState.Open && myPlayer != null)
+        {
+            NetworkMessage message = new NetworkMessage
+            {
+                type = "playerPosition",
+                playerId = myPlayerId,
+                position = new Vector3Data(myPlayer.transform.position)
+            };
+            await webSocket.SendText(JsonConvert.SerializeObject(message));
+        }
+    }
+
+    //다른 플레이어 위치 업데이트 함수
+    private void UpdatePlayerPosition(NetworkMessage message)
+    {
+        if (message.playerId == myPlayerId) return; //자신의 위치는 무시
+        if (!otherPlayers.ContainsKey(message.playerId))
+        {
+            //새로운 플레이어 생성
+            GameObject newPlayer = Instantiate(playerPrafabs);
+            newPlayer.name = $"Player_{message.playerId}";
+            otherPlayers.Add(message.playerId, newPlayer);
+        }
+
+        //위치 업데이트
+        otherPlayers[message.playerId].transform.position = message.position.ToVector3();
+    }
+
+    //플레이어 제거 함수
+    private void RemovePlayer(string playerId)
+    {
+        if(otherPlayers.ContainsKey(playerId))
+        {
+            Destroy(otherPlayers[playerId]);
+            otherPlayers.Remove(playerId);
+            AddToChatLog($"플레이어{playerId}퇴장");
+        }
+    }
+        
 }
